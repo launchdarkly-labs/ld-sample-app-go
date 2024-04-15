@@ -1,6 +1,6 @@
 package main
 
-import "github.com/launchdarkly-labs/ld-sample-app-go/api"
+import "LdSampleAppGo/api"
 
 func main() {
 	a := api.New("3000")
