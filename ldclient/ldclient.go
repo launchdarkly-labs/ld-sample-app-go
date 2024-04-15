@@ -18,9 +18,9 @@ func GetLdClient() *ld.LDClient {
 		sdkkey := os.Getenv("LD_SDK_KEY")
 		client, _ := ld.MakeClient(sdkkey, 5*time.Second)
 		if client.Initialized() {
-			fmt.Printf("SDK successfully initilized!")
+			fmt.Printf("SDK successfully initilized!\n")
 		} else {
-			fmt.Printf("SDK failed to initialize")
+			fmt.Printf("SDK failed to initialize.\n")
 			os.Exit(1)
 		}
 		instance = client
